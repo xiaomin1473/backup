@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>3ae</title>
+   <meta name="description" content="">
+   <meta name="keywords" content="五子棋">
+   <meta name="author" content="sid.tadpole">
+   <link rel="stylesheet" type="text/css" href="style/style.css">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+   <div class="header">
+      <a class="logo" href="#" style="width: 136px; height: 54px;" title="LOGO"></a>
+      <div class="menu-nav">
+         <ul class="menu-items">
+            <li><a href="#" ><h2 class="active">首页</h2></a></li>
+            <li><a href="#"><h2>机票</h2></a></li>
+            <li><a href="#"><h2>酒店</h2></a></li>
+            <li class="items-active"><a href="#"><h2>团购</h2></a>
+               <ul class="item-list group">
+                  <li><a href="#"><h5>酒店团购</h5></a></li>
+                  <li><a href="#"><h5>周边休闲</h5></a></li>
+                  <li><a href="#"><h5>长线游</h5></a></li>
+               </ul>
+            </li>
+            <li class="items-active">
+               <a href="#"><h2>度假</h2></a>
+               <ul class="item-list vacation">
+                  <li><a href="https://dujia.qunar.com/?tf=djnavkj_index"><h5>度假首页</h5></a></li>
+                  <li><a href="https://i.qunar.com/?tf=djnavkj_haiwaiwanle"><h5>海外玩乐</h5></a></li>
+                  <li><a href="https://fh.dujia.qunar.com/?tf=package"><h5>自由行</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/p/abroad/?tf=djnavkj_abroad"><h5>出境游</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/tejia/?tf=djnavkj_tejia"><h5>特卖</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/p/around/?tf=djnavkj_around"><h5>周边游</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/p/youlun/?tf=djnavkj_youlun"><h5>邮轮</h5></a> </li>
+                  <li><a href="https://dujia.qunar.com/visa/?tf=djnavkj_visa"><h5>签证</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/global/?tf=djnavkj_haiwaigouwu" class="qhf_hot"><h5>海外购物</h5><i class="qhf_hot"></i></a> </li>
+                  <li><a href="https://diy.dujia.qunar.com/?tf=djnavkj_diy"><h5>包团·定制</h5></a></li>
+                  <li><a href="https://dujia.qunar.com/ins/agg/index.qnr?tf=dj_ins"><h5>旅行保险</h5><i class="new"></i></a></li>
+               </ul>
+            </li>
+            <li class="items-active"><a href="#"><h2>门票</h2></a>
+               <ul class="item-list ticket">
+                  <li><a href="http://piao.qunar.com/"><h5>国内门票</h5></a></li>
+                  <li><a href="http://piao.qunar.com/overseas/"><h5>玩转海外</h5><i class="new"></i></a></li>
+                  <li><a href="http://piao.qunar.com/topic/gat1409.htm"><h5>港澳台门票</h5></a></li>
+                  <li><a href="http://piao.qunar.com/ticket/vista.htm"><h5>地图找景点</h5></a></li>
+               </ul>
+            </li>
+            <li><a href="#"><h2>火车票</h2></a></li>
+            <li class="items-active"><a href="#"><h2>攻略</h2></a>
+               <ul class="item-list raiders">
+                  <li><a href="http://travel.qunar.com/?from=header"><h5>攻略首页</h5></a></li>
+                  <li><a href="http://travel.qunar.com/travelbook/list.htm?order=hot_heat"><h5>攻略库</h5></a></li>
+                  <li><a href="http://travel.qunar.com/place/?from=header"><h5>目的地</h5></a></li>
+                  <li><a href="http://travel.qunar.com/plan/first?from=header"><h5>创建行程</h5></a></li>
+                  <li><a href="http://travel.qunar.com/youji/create?from=header" class="qhf_hot"><h5>发表游记</h5><i class="qhf_hot"></i></a></li>
+                  <li><a href="http://guide.qunar.com/"><h5>骆驼书</h5></a></li>
+               </ul>
+            </li>
+            <li><a href="#"><h2>公寓</h2></a></li>
+            <li class="items-active"><a href="#"><h2>当地人</h2></a>
+               <ul class="item-list indigene">
+                  <li><a href="http://i.qunar.com?tf=ejsy"><h5>当地人首页</h5></a></li>
+                  <li><a href="http://i.qunar.com/web/search/index?q=%E5%87%BA%E5%A2%83WiFi&amp;tf=ejcjwf" class="qhf_hot"><h5>出境WiFi</h5><i class="qhf_hot"></i></a></li>
+                  <li><a href="http://i.qunar.com/web/search/index?q=%E6%97%85%E6%B8%B8%E5%8C%85%E8%BD%A6&amp;tf=ejlybc"><h5>旅游包车</h5></a></li>
+                  <li><a href="http://i.qunar.com/web/search/index?tm=i02&amp;q=%E4%B8%80%E6%97%A5%E6%B8%B8&amp;tf=ejyry"><h5>一日游</h5></a></li>
+                  <li><a href="http://i.qunar.com/web/search/index?q=%E5%AF%BC%E6%B8%B8%E8%AE%B2%E8%A7%A3&amp;tf=ejdyjj"><h5>导游讲解</h5></a></li>
+                  <li><a href="http://i.qunar.com/web/search/index?q=%E4%BA%A4%E9%80%9A%E5%8D%A1&amp;tf=ejjtk"><h5>交通卡</h5></a></li>
+               </ul>
+            </li>
+            <li><a href="#"><h2>车车</h2></a></li>
+            <li><a href="#"><h2>汽车票</h2></a></li>
+            <li class="dplno-media"><a href="#"><h2>海外</h2></a></li>
+            <li class="dplno-media"><a href="#"><h2>保险</h2></a></li>
+            <li class="items-active dplno-media"><a href="#"><h2>金融</h2></a>
+               <ul class="item-list finance">
+                  <li><a href="https://jr.qunar.com/index.htm"><h5>首页</h5></a></li>
+                  <li><a href="https://jr.qunar.com/fund/index.htm"><h5>趣游宝</h5></a></li>
+                  <li><a href="https://jr.qunar.com/ious/index.htm"><h5>拿去花</h5></a></li>
+                  <li><a href="http://bao.qunar.com/?from=qunar_nav_pc"><h5>保险商城</h5></a></li>
+               </ul>
+            </li>
+            <li class="dplno-media"><a href="#"><h2>会场</h2></a></li>
+            <li class="items-active dplyes-media">
+               <a href="#"><h2>更多</h2></a>
+               <ul class="items-more ps-abt">
+                  <li><a href="#"><h2>海外</h2></a></li>
+                  <li><a href="#"><h2>保险</h2></a></li>
+                  <li><a href="#"><h2>金融</h2></a></li>
+                  <li><a href="#"><h2>会场</h2></a></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+      <ul class="top-nav">
+         <li>请&nbsp;<a href="#">登录</a>&nbsp;或</li>
+         <li><a href="">免费注册</a></li><p>|</p>
+         <li><a href="#"><i></i>消息</a></li><p>|</p>
+         <li class="top-nav-active"><a href="#">查看订单</a>
+            <ul class="top-nav-items">
+               <li><a href="#">机票订单</a></li>
+               <li><a href="#">酒店订单</a></li>
+               <li><a href="#">公寓订单</a></li>
+               <li><a href="#">团购订单</a></li>
+               <li><a href="#">度假订单</a></li>
+               <li><a href="#">门票订单</a></li>
+               <li><a href="#">火车票订单</a></li>
+               <li><a href="#">汽车票订单</a></li>
+               <li><a href="#">车车订单</a></li>
+               <li><a href="#">Q商城订单</a></li>
+               <li><a href="#">当地人订单</a></li>
+               <li><a href="#">金融订单</a></li>
+               <li><a href="#">礼品卡订单</a></li>
+            </ul>
+         </li><p>|</p>
+         <li><a href="#">积分商城</a></li><p>|</p>
+         <li><a href="#">联系客服</a></li><p>|</p>
+         <li><a href="#"><img src="img/ico_en_v1.png" style="width: 19px; height: 13px;" alt="absmiddle">IN English</a></li>
+      </ul>
+      <a class="app-logo"><img src="img/dijia1.gif" alt="APP_LOGO" style="width: 140px; height: 36px;"></a>
+      <a class="app-logo-min"><img src="img/dijia2.gif" alt="APP_LOGO" style="width: 94px; height: 36px;"></a>
+   </div>
+   <div class="page-wrapper">
+      <div class="content clrfix">
+         <div class="content-left lf">
+            <ul class="content-items">
+               <li class=""><a href="#plane-ticket" class="active-col"><h2>机票</h2></a></li>
+               <li><a href="#hotel" class="clrbdrtop"><h2>酒店</h2></a></li>
+               <li><a href="#train-ticket"><h2>火车票</h2></a></li>
+               <li><a href="#vacation"><h2>度假</h2></a></li>
+               <li><a href="#ticket"><h2>门票</h2></a></li>
+               <li><a href="#group-buy"><h2>团购</h2></a></li>
+               <li><a href="#car"><h2>车车</h2></a></li>
+               <li><a href="#stroll"><h2>自由行</h2></a></li>
+            </ul>
+            <div class="content-wrapper lf">
+               <ul class="wrapper-main">
+                  <li id="plane-ticket">机票</li>
+                  <li id="hotel">酒店</li>
+                  <li id="train-ticket">火车票</li>
+                  <li id="vacation">假期</li>
+                  <li id="ticket">门票</li>
+                  <li id="group-buy">团购</li>
+                  <li id="car">车车</li>
+                  <li id="stroll">自由行</li>
+               </ul>
+            </div>
+         </div>
+         <div class="content-right rf">
+            <div class="clrhvr"></div>
+               <video src="video/v1.mp4" style="height: 320px; margin-left: -380px;" autobuffer autoplay loop></video>
+         </div>
+      </div>
+      <div class="main-wrapper clrfix">
+         <div class="wrapper-left lf">
+            <div class="home-on-sale">
+               <div class="home-title">
+                  <ul class="clrfix home-title-nav" beacon-first="true">
+                     <li><a href="javascript:;" class="">今日特惠</a></li>
+                     <li><a href="javascript:;" >特惠门票</a></li>
+                  </ul>
+                  <h5 class="more" >
+                     <a target="_blank" href="http://piao.qunar.com/?from=qunarSales_more" beacon-type="特价|更多|piao">更多&nbsp;&gt;</a></h5>
+                  </span>
+               </div>
+               <div class="mod-home-onSale-body clrfix mod-home-onSale-today" style="display: none;" data-type="today">
+<div style="width: 100%;"><div class="mod-home-onSale-body-left clrfix">
+
+    <a class="onSale-body-left-item clrfix" target="_blank" href="http://cqgl4.package.qunar.com/user/id=47788032#tf=tejiaqunar">
+        <div class="onSale-body-left-img">
+            <img src="https://img1.qunarzz.com/vc/45/c2/58/74e7e7416f37f449d0b5acbc29.jpg"></div>
+        <div class="onSale-body-left-words">
+            <p class="onSale-body-left-words-title">
+                <span>
+                    <span>北京</span>
+          -
+                    <span>丽江</span>
+                </span>
+                &nbsp;
+                <span>跟团游</span>
+            </p>
+            <div class="onSale-body-left-words-content">双人下单立减799最后三天丨昆大丽三古城丨温泉0强购</div>
+            <div class="onSale-body-left-words-bottom clrfix"> <em>¥2688</em>
+                <span class="market-price">
+                    门市价：¥
+                    <span>3899</span>
+                </span>
+            </div>
+        </div>
+    </a>
+
+    <a class="onSale-body-left-item clrfix" target="_blank" href="http://erlt3.package.qunar.com/user/detail.jsp?id=3607377023#tf=tejiaqunar">
+        <div class="onSale-body-left-img">
+            <img src="https://img1.qunarzz.com/vc/89/93/e6/35af3c4c83cf290eee1255d3dd.jpg"></div>
+        <div class="onSale-body-left-words">
+            <p class="onSale-body-left-words-title">
+                <span>
+                    <span>北京</span>
+          -
+                    <span>普吉岛</span>
+                </span>
+                &nbsp;
+                <span>跟团游</span>
+            </p>
+            <div class="onSale-body-left-words-content">2晚考拉海滩别墅+3晚国际五星+浮潜+美食享不断 </div>
+            <div class="onSale-body-left-words-bottom clrfix"> <em>¥5850</em>
+                <span class="market-price">
+                    门市价：¥
+                    <span>9589</span>
+                </span>
+            </div>
+        </div>
+    </a>
+
+</div>
+<div class="mod-home-onSale-body-right clrfix">
+    <a class="onSale-body-right-item " target="_blank" href="http://ysqfb.package.qunar.com/user/detail.jsp?id=3759696224#tf=tejiaqunar">
+        <div class="onSale-body-right-top">
+            <img src="https://imgs.qunarzz.com/p/tts3/1607/da/5c7db4a5cd3a129a.jpg_r_390x260x90_f2d184db.jpg"></div>
+        <div class="onSale-body-right-bottom">
+            <p class="onSale-body-right-title">
+                <span>北京-三亚</span>
+                <span>5天</span>
+                <span>自由行</span>
+            </p>
+            <p class="onSale-body-right-desc">三亚湾红树林成长季套餐免费升级+BBQ+水乐园等亲子玩乐大礼包</p>
+            <div class="clrfix onSale-body-right-price clrfix">
+                <div class="onSale-body-right-special-price">
+                    <span>
+                        <em>¥</em>
+                    </span>
+                    <span>
+                        <em>3890</em>
+                    </span>
+                </div>
+                <div class="onSale-body-right-market-price">
+                    <label>
+                        门市价：¥
+                        <span>6999</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a class="onSale-body-right-item res-hide" target="_blank" href="http://mdlx1.package.qunar.com/user/detail.jsp?id=2019996028#tf=tejiaqunar">
+        <div class="onSale-body-right-top">
+            <img src="https://imgs.qunarzz.com/p/tts9/1702/cb/2951bb96bcf20802.jpg_r_390x260x90_68b38c0c.jpg"></div>
+        <div class="onSale-body-right-bottom">
+            <p class="onSale-body-right-title">
+                <span>北京-贵州</span>
+                <span>4天</span>
+                <span>自由行</span>
+            </p>
+            <p class="onSale-body-right-desc">国航往返直飞+贵阳2晚、1晚西江住客栈+赠送往返接送机</p>
+            <div class="clrfix onSale-body-right-price clrfix">
+                <div class="onSale-body-right-special-price">
+                    <span>
+                        <em>¥</em>
+                    </span>
+                    <span>
+                        <em>1999</em>
+                    </span>
+                </div>
+                <div class="onSale-body-right-market-price">
+                    <label>
+                        门市价：¥
+                        <span>4999</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a class="onSale-body-right-item " target="_blank" href="http://yayl1.package.qunar.com/user/detail.jsp?id=1961617712#tf=tejiaqunar">
+        <div class="onSale-body-right-top">
+            <img src="https://imgs.qunarzz.com/p/tts4/1610/54/8f0f0bc9259f5b02.jpg_r_390x260x90_2f87faeb.jpg"></div>
+        <div class="onSale-body-right-bottom">
+            <p class="onSale-body-right-title">
+                <span>北京-泰国</span>
+                <span>7天</span>
+                <span>跟团游</span>
+            </p>
+            <p class="onSale-body-right-desc">北京直飞+全程无自费+国际五星酒店</p>
+            <div class="clrfix onSale-body-right-price clrfix">
+                <div class="onSale-body-right-special-price">
+                    <span>
+                        <em>¥</em>
+                    </span>
+                    <span>
+                        <em>3799</em>
+                    </span>
+                </div>
+                <div class="onSale-body-right-market-price">
+                    <label>
+                       门市价：¥
+                        <span>7031</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a class="onSale-body-right-item res-hide" target="_blank" href="http://llha1.package.qunar.com/user/detail.jsp?id=2979774084#tf=tejiaqunar">
+        <div class="onSale-body-right-top">
+            <img src="https://img1.qunarzz.com/vc/c6/90/df/9e2a46510d5c67b3eb681c5815.jpg"></div>
+        <div class="onSale-body-right-bottom">
+            <p class="onSale-body-right-title">
+                <span>北京-韩国</span>
+                <span>5天</span>
+                <span>半自助</span>
+            </p>
+            <p class="onSale-body-right-desc">四花/五花酒店+赠乐天通票+自由活动</p>
+            <div class="clrfix onSale-body-right-price clrfix">
+                <div class="onSale-body-right-special-price">
+                    <span>
+                        <em>¥</em>
+                    </span>
+                    <span>
+                        <em>2180</em>
+                    </span>
+                </div>
+                <div class="onSale-body-right-market-price">
+                    <label>
+                        门市价：¥
+                        <span>3000</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </a>
+</div></div></div>
+            <div class="onSale-body clrfix" >
+               <div class="onSale-body-left clrfix">
+                     <a class="onSale-body-left-item clrfix" target="_blank" href="http://piao.qunar.com/ticket/detail_7698.html#from=home_remen&amp;in_track=qunar_tjmp_7698">
+                       <div class="onSale-body-left-img">
+                               <img alt="天坛" src="img/920e47352552c1c990.water.jpg_262x238_4d83d97a.jpg">
+                       </div>
+                       <div class="onSale-body-left-words">
+                           <p class="onSale-body-left-words-title">
+                               <span><span>天坛公园</span></span>
+                           </p>
+                           <div class="onSale-body-left-words-content">
+                               探寻古代皇帝祭天仪式的奥秘
+                           </div>
+                           <div class="onSale-body-left-words-bottom clrfix">
+                              <em>¥9</em><span class="market-price  ">票面价：¥<span>10</span></span>
+                           </div>
+                       </div>
+                   </a>
+                  <a class="onSale-body-left-item clrfix" target="_blank" href="http://piao.qunar.com/ticket/detail_194609.html#from=home_remen&amp;in_track=qunar_tjmp_194609">
+                     <div class="onSale-body-left-img">
+                            <img alt="" src="img/4fc3f5a1b838f279a3.water.jpg_262x238_6c9fa99c.jpg">
+                     </div>
+                     <div class="onSale-body-left-words">
+                        <p class="onSale-body-left-words-title">
+                           <span><span>北京杜莎夫人蜡像馆</span></span>
+                        </p>
+                        <div class="onSale-body-left-words-content">
+                           中轴线上的巨星之旅
+                        </div>
+                        <div class="onSale-body-left-words-bottom clrfix">
+                           <em>¥86.1</em><span class="market-price  ">票面价：¥<span>110</span></span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+<div class="mod-home-onSale-body-right clrfix">
+          <a class="onSale-body-right-item " target="_blank" href="http://piao.qunar.com/ticket/detail_13825.html#from=home_remen&amp;in_track=qunar_tjmp_13825">
+            <div class="onSale-body-right-top"><img alt="" src="//imgs.qunarzz.com/sight/p0/201403/11/1c9c9b03cec5bf307daa6a3711f27049.jpg_256x144_81c61021.jpg"></div>
+            <div class="onSale-body-right-bottom">
+                <p class="onSale-body-right-title">
+                        明十三陵
+                </p>
+                <p class="onSale-body-right-desc" title="气势磅礴的陵寝建筑群">气势磅礴的陵寝建筑群</p>
+                <div class="clrfix onSale-body-right-price clrfix">
+                    <div class="onSale-body-right-special-price">
+                        <span><em>¥</em></span><span><em>28</em></span>
+                    </div>
+                    <div class="onSale-body-right-market-price"><label class=" ">票面价：¥<span>30</span></label></div>
+                </div>
+            </div>
+        </a>
+          <a class="onSale-body-right-item res-hide" target="_blank" href="http://piao.qunar.com/ticket/detail_16172.html#from=home_remen&amp;in_track=qunar_tjmp_16172">
+            <div class="onSale-body-right-top"><img alt="" src="//imgs.qunarzz.com/sight/p0/1602/d7/d73866ebca3ac70790.water.jpg_256x144_bcc94fde.jpg"></div>
+            <div class="onSale-body-right-bottom">
+                <p class="onSale-body-right-title">
+                        北京欢乐谷
+                </p>
+                <p class="onSale-body-right-desc" title="七大主题园区带你畅享北京欢乐谷">七大主题园区带你畅享北京欢乐谷</p>
+                <div class="clrfix onSale-body-right-price clrfix">
+                    <div class="onSale-body-right-special-price">
+                        <span><em>¥</em></span><span><em>58</em></span>
+                    </div>
+                    <div class="onSale-body-right-market-price"><label class=" ">票面价：¥<span>150</span></label></div>
+                </div>
+            </div>
+        </a>
+          <a class="onSale-body-right-item " target="_blank" href="http://piao.qunar.com/ticket/detail_14499.html#from=home_remen&amp;in_track=qunar_tjmp_14499">
+            <div class="onSale-body-right-top"><img alt="" src="//imgs.qunarzz.com/sight/p0/201405/12/51b63883c25f5d87af3c08bb016e2bd7.jpg_256x144_79588c50.jpg"></div>
+            <div class="onSale-body-right-bottom">
+                <p class="onSale-body-right-title">
+                        恭王府
+                </p>
+                <p class="onSale-body-right-desc" title="一起去看看和珅家">一起去看看和珅家</p>
+                <div class="clrfix onSale-body-right-price clrfix">
+                    <div class="onSale-body-right-special-price">
+                        <span><em>¥</em></span><span><em>53</em></span>
+                    </div>
+                    <div class="onSale-body-right-market-price"><label class=" ">票面价：¥<span>79</span></label></div>
+                </div>
+            </div>
+        </a>
+          <a class="onSale-body-right-item res-hide" target="_blank" href="http://piao.qunar.com/ticket/detail_4586.html#from=home_remen&amp;in_track=qunar_tjmp_4586">
+            <div class="onSale-body-right-top"><img alt="" src="//imgs.qunarzz.com/sight/p0/1602/45/459bd3d00321a44790.water.jpg_256x144_1e4a2a29.jpg"></div>
+            <div class="onSale-body-right-bottom">
+                <p class="onSale-body-right-title">
+                        景山公园
+                </p>
+                <p class="onSale-body-right-desc" title="俯看故宫绝佳位置">俯看故宫绝佳位置</p>
+                <div class="clrfix onSale-body-right-price clrfix">
+                    <div class="onSale-body-right-special-price">
+                        <span><em>¥</em></span><span><em>1</em></span>
+                    </div>
+                    <div class="onSale-body-right-market-price"><label class="hide ">票面价：¥<span>1</span></label></div>
+                </div>
+            </div>
+        </a>
+</div>
+</div>
+            </div>
+           <div class="carousel" ></div>
+         </div>
+         <div class="wrapper-right rf">
+               <div class="mod-home-panel">
+                 <h6>公告</h6>
+                 <div class="con">
+                     <p><a href="http://www.qunar.com/site/zh/fanzhapian/index.shtml" target="_blank">反网络诈骗专栏</a></p>
+                     <p><a href="http://stock.sohu.com/20140612/n400748537.shtml" target="_blank">认证导游入驻去哪儿网</a></p>
+                     <p><a href="http://tech.sina.com.cn/i/2014-03-24/14199266800.shtml?qq-pf-to=pcqq.c2c" target="_blank">去哪儿网已通过支付卡产业数据安全标准</a></p>
+                 </div>
+                 <div class="service">
+                      <div class="custom_24">
+                          <i>去哪儿网客服电话</i>
+                          <b><span class="servers_24"></span>提供<span class="num">24</span>小时服务</b>
+                      </div>
+                      <div class="custorm_tephone">
+                          <i>国内客服电话</i>
+                          <b>10101234</b>
+                      </div>
+                      <div class="custorm_tephone">
+                          <i>国际客服电话</i>
+                          <b>(+8610)82872677</b>
+                      </div>
+                      <div class="custorm_tephone">
+                          <i>酒店预订热线</i>
+                          <b>400-666-3223</b>
+                      </div>
+                     </div>
+                </div>
+                <div class="mod-support-links">
+                    <h6>去哪儿网广告推荐</h6>
+                </div>
+                <div class="mod-home-panel" style="margin-top:8px;">
+                    <h6>旅行小贴士</h6>
+                    <div class="con">
+                        <p><a href="http://www.qunar.com/site/zh/activity/hdgs.html" target="_blank">海淀工商喊您年报了</a></p>
+                        <p><a href="http://www.qunar.com/site/zh/yiyao/yy01.shtml" target="_blank">服药的最佳时间</a></p>
+                        <p><a href="http://www.qunar.com/site/zh/yiyao/yy02.shtml" target="_blank">吃药讲究姿势</a></p>
+                    </div>
+                </div>
+         </div>
+      </div>
+      <div class="mod-home-appfoot">
+         <div class="container">
+             <div class="appbg_l"></div>
+             <div class="appbg_r"></div>
+             <a href="http://app.qunar.com/" title="下载去哪儿客户端"></a>
+         </div>
+     </div>
+      </div>
+   </div>
+   <div class="mod-home-seolink">
+        <dl>
+            <dt>度假</dt>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%8D%83%E5%B2%9B%E6%B9%96">千岛湖旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%8F%B0%E6%B9%BE">台湾旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E6%88%90%E9%83%BD">成都旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E8%A5%BF%E5%A1%98">西塘旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E6%AD%A6%E6%B1%89">武汉旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E9%A6%99%E6%B8%AF">香港旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E6%9D%AD%E5%B7%9E">杭州旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%8D%97%E4%BA%AC">南京旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E4%BA%91%E5%8D%97">云南旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E4%B8%89%E4%BA%9A">三亚旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E4%B9%8C%E9%95%87">乌镇旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E9%9F%A9%E5%9B%BD">韩国旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%8E%A6%E9%97%A8">厦门旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E9%BC%93%E6%B5%AA%E5%B1%BF">鼓浪屿旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E8%A5%BF%E5%AE%89">西安旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E8%A5%BF%E8%97%8F">西藏旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E4%B9%9D%E5%AF%A8%E6%B2%9F">九寨沟旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%B7%B4%E5%8E%98%E5%B2%9B">巴厘岛旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E8%8B%8F%E5%B7%9E">苏州旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%8C%97%E4%BA%AC">北京旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E6%99%AE%E5%90%89%E5%B2%9B">普吉岛旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%A9%BA%E6%BA%90">婺源旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%A4%A9%E6%B4%A5">天津旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E9%9D%92%E5%B2%9B">青岛旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E4%B8%8A%E6%B5%B7">上海旅游</a> | </dd>
+                <dd><a href="http://dujia.qunar.com/pq/list_%E5%BC%A0%E5%AE%B6%E7%95%8C">张家界旅游</a> | </dd>
+        </dl>
+        <dl>
+            <dt>攻略</dt>
+                <dd><a href="http://travel.qunar.com/p-cs300133-wuhan">武汉旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-sf298050-taiwan">台湾旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299861-nanjing">南京旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300100-xian">西安旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299782-xiamen">厦门旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs302159-pujidao">普吉岛旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300188-sanya">三亚旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-sf297167-xizang">西藏旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300085-chengdu">成都旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299878-shanghai">上海旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq715901-gulangyu">鼓浪屿旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300064-zhangjiajie">张家界旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-sf297541-yunnan">云南旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299914-beijing">北京旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq713020-wuzhen">乌镇旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299783-qingdao">青岛旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-gj300551-hanguo">韩国旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq708334-wuyuan">婺源旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq702129-qiandaohu">千岛湖旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299937-suzhou">苏州旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300027-xianggang">香港旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs302310-balidao">巴厘岛旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq702670-xitang">西塘旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs299957-tianjin">天津旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-cs300195-hangzhou">杭州旅游攻略</a> | </dd>
+                <dd><a href="http://travel.qunar.com/p-jq703517-jiuzhaigou">九寨沟旅游攻略</a> | </dd>
+        </dl>
+   </div>
+   <div class="footer">
+      <div class="cr">
+         <p class="copyright"><span>Copyright ©2017 Qunar.com</span><span>京公网安备110108901530</span><a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备05021087号</a><a href="http://www.qunar.com/site/company_info.htm" target="_blank" rel="nofollow">营业执照信息</a><a href="http://baoxian.qunar.com/html/notify_zct.html" target="_blank" rel="nofollow">保险经纪资质</a><a href="http://www.qunar.com/site/company_drug_info.htm" target="_blank" rel="nofollow">(京)-非经营性-2016-0110</a><span class="s24">去哪儿网客服电话10101234</span></p>
+      </div>
+   </div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

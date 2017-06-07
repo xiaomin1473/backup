@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>权限管理</title>
+    
+    <link rel="stylesheet" type="text/css"  href="http://localhost/top_four/public/static/css/bootstrap.min.css">
+</head>
+<body class="container">
+        <center><h1>权限管理</h1></center>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                 <div class="col-md-4">
+                    <a href="{:url('add')}" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;添加权限</a>
+                </div>
+                <div class="col-md-8  text-right">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="name">权限</label>
+                            <input name="name" type="text" class="form-control" placeholder="权限查询..." value="{:input('get.name')}">
+                        </div>
+                        <button type="submit" class="btn btn-default">查询</button>
+                    </form>
+                </div>     
+            </div>
+            <hr />
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr class="info text-center">
+                        <th class="text-center">权限序号</th>
+                        <th class="text-center">权限名称</th>
+                        <th class="text-center">添加时间</th>
+                        <th class="text-center">操作</th>
+                    </tr>
+                </thead>
+                <!--循环输出列表-->
+                <tbody>
+                    {volist name="Powers" id="Power" key="key"}
+                    <tr class="text-center">
+                        <!--<td>{$key}</td>-->
+                        <td>{$Power->getData('p_id')}</td>
+                        <td>{$Power->getData('power_name')}</td>
+                        <td>{$Power->getData('create_time')}</td>
+                        <td> <a href="{:url('edit?id=' . $Power->getData('p_id'))}" class="btn btn-info btn-sm">管理</a>&nbsp;&nbsp;&nbsp;
+                                <a href="{:url('del?id=' . $Power->getData('p_id'))}" class="btn btn-danger btn-sm">删除</a>
+                        </td>
+                    </tr>
+                    {/volist}
+                </tbody>
+            </table>
+            <center>{$Powers->render()}</center>
+        </div>
+    <!--测试，输出User对象-->
+    <!--{:var_dump($Powers)}-->
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+.top{
+    width:100%;
+    height:20%;
+    border-bottom:3px solid #333333;
+    background: linear-gradient(#00B7FF,#22aadd 50%,#00B7FF);
+}
+.top h1{
+    text-align: center;
+    line-height:300%;
+    text-shadow: 1px 1px 10px rgba(23,45,21,0.8);
+}
+.bottom{
+    width:100%;
+    height:80%;
+}
+.bottom .left{
+    width:20%;
+    height:100%;
+    float: left;
+    border-right: 3px solid #333333;
+}
+.bottom .left .yiji{
+    margin:20px auto;
+}
+.bottom .left .erji li,.bottom .left .yiji h3{
+    text-align: center;
+    height:35px;
+}
+.bottom .left .yiji li a{
+    padding:5px 10px;
+    background: #3e8f3e;
+    border:2px solid #333;
+}
+.bottom .left .yiji li .erji{
+    padding-left:40px;
+    padding-top: 10px;
+}
+.bottom .right{
+    width:80%;
+    height:100%;
+    float: left;
+}
+.bottom .right iframe{
+    width:100%;
+    height:100%;
+}
+
+/*登陆*/
+.login-box{
+    width:400px;
+    height:300px;
+    position: fixed;
+    left:0;right:0;
+    top:0;bottom:0;
+    margin:auto;
+    border:2px solid #333333;
+    border-radius: 20px;
+    padding:20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+}
+.user,.error{
+    width:100%;
+    height:40px;
+    float: left;
+    padding:5px 20px;
+    line-height: 40px;
+    font-size: 25px;
+}
+.error{
+    font-size: 20px;
+    line-height: 40px;
+}
+input[type="text"],input[type="password"]{
+    width:220px;
+    height:100%;
+    padding:0;
+    margin:0 0 0 20px;
+    float: right;
+}
+.user span{
+    line-height: 30px;
+    height:30px;
+    float: left;
+}
+.btns{
+    width:100%;
+    height:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns input{
+    width:80px;
+    padding:0;
+    margin:0;
+    background: #22aadd;
+    font-size: 20px;
+    color: #024378;
+}
+.btns a{
+    display: block;
+    width:80px;
+    line-height: 40px;
+    text-align: center;
+    background: #22aadd;
+    border:1px solid #eeeeee;
+    font-size: 20px;
+    color: #024378;
+}
+
+/*跳转页*/
+.noticeBox{
+    width:300px;
+    height:200px;
+    border:2px solid #333;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(45,45,45,0.5);
+    position: fixed;
+    top:0;bottom:0;
+    left:0;right:0;
+    margin:auto;
+    /*background:url("");*/
+}
+.noticeTitle{
+    width:100%;
+    height:20%;
+    line-height:300%;
+    font-size: 24px;
+    text-align: center;
+}
+.noticeCon{
+    width:100%;
+    height:60%;
+    line-height: 200%;
+    text-align: center;
+    position: relative;
+    bottom:-30px;
+}

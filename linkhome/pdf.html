@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<span id="user-sevice-agreement-btn">跳转</span>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    function jump2(url){
+        window.open(url,"_blank");
+    }
+    $("#user-sevice-agreement-btn").bind("click",function(){
+        jump2("../../anonymous/1.pdf");
+    })
+
+</script>
+</body>
+</html>

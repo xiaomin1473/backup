@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>北北个人博客</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="{FCSS_PATH}bootstrap.min.css" rel="stylesheet">
+    <link href="{FCSS_PATH}base.css" rel="stylesheet">
+    <link href="{FCSS_PATH}index.css" rel="stylesheet">
+    <script type="text/javascript" src="{FJS_PATH}jquery.min.js"></script>
+    <script type="text/javascript" src="{FJS_PATH}sliders.js"></script>
+    <script src="{FJS_PATH}nav.js"></script>
+    <!--[if lt IE 9]>
+    <script src="{FJS_PATH}modernizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <ul class="loginbox">
+       <li>
+            <a href="index.php?a=login">登录</a>
+            <a href="index.php?a=reg">注册</a>
+       </li>
+        <li>
+            <a href="#">{$auser}</a>
+            <a href="index.php?a=logout">登出</a>
+        </li>
+    </ul>
+    <div class="logo f_l"> <a href="index.php"><img src="{FIMG_PATH}/logo.png"></a> </div>
+    <nav id="topnav" class="f_r">
+        <ul>
+            {foreach $menu as $v}
+            <li><a title="index.php?a=alist&&cid={$v['cid']}">{$v["cname"]}</a></li>
+            {/foreach}
+        </ul>
+
+    </nav>
+</header>

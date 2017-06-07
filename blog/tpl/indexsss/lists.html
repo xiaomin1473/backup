@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		{foreach $data as $v}
+		<li>
+			<a href="{$v['url']}">
+				{$v["title"]}
+			</a>
+		</li>
+		{/foreach}
+	</ul>
+</body>
+</html>

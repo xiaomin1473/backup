@@ -1,0 +1,341 @@
+/****** CSS RESET ******/
+*{
+   margin:0px;
+   padding:0px;
+   font-family:"宋体";
+   font-size:14.7px;
+   text-decoration:none;
+   list-style: none;
+}
+
+body{
+   margin:0px;
+   border:none;
+}/*自带边界*/
+
+img{
+   display: block;
+}/*去空隙*/
+
+h1,h2,h3,h4{
+   margin:0px;
+   font-size:16px;
+   font-weight: normal;
+}/*自带边界、加粗、字大*/
+
+p{
+   margin:0px;
+}/*自带边界*/
+
+a{
+   text-decoration: none;
+   color:black;
+}/*自带下划线、字体颜色*/
+
+ul{
+   margin:0px;
+   padding:0px;
+}/*自带边界、填充*/
+
+li{
+   list-style: none;
+}/*自带列表样式*/
+
+input{
+   margin:0px;
+   padding:0px;
+   border:none;
+}/*自带边界、填充、边框*/
+
+.clearfix{
+   clear:both;
+}/*支撑父级*/
+
+/****** PAGE STYLE ******/
+body{
+   width: 1000px;
+   margin:0 auto;
+}
+
+/****** PAGE HEAD ******/
+.header{
+   border:solid 2px red;
+   padding-top:120px;
+   padding-bottom:60px;
+}
+
+.top{
+   width: 996px;
+   margin:0 auto;
+   margin-bottom: 100px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   position: fixed;
+   top:0px;
+   background-color:black;
+}
+
+.logo{
+   color:#fff;
+   float: left;
+}
+
+.navbar{
+   float:right;
+}
+
+.navbar li{
+   background-color:black;
+   float: left;
+   position: relative;
+}
+
+.navbar .new{
+   width: 28px;
+   height: 14px;
+   right:-4px;
+   top:-4px;
+   line-height: 10px;
+   text-align: center;
+   color: #f0f0f0;
+   background-color: red;
+   position: absolute;
+   z-index: 1;
+
+}
+
+.navbar a{
+   width: 80px;
+   height: 34px;
+   line-height: 34px;
+   text-align: center;
+   display: block;
+   color: #fff;
+}
+
+.navbar a:hover{
+   background-color:#ddd;
+   color: #333;
+}
+
+.navbar li:active .new{
+   display: none;
+}
+
+.header h2{
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.header h1{
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.header input{
+   display: block;
+   margin:0 auto;
+}
+
+/****** SERVICE ******/
+.service{
+   border:solid 2px red;
+   padding-top: 50px;
+   padding-bottom: 80px;
+}
+
+.service h1{
+   text-align: center;
+}
+
+.service h2{
+   text-align: center;
+}
+
+.service .column{
+   width: 999px;
+   margin:0 auto;
+}
+
+.service .column li{
+   padding-top: 30px;
+   width: 33.3%;
+   float:left;
+}
+
+.service .column li img{
+   display: block;
+   margin:0 auto;
+}
+
+.service .column li h3{
+   text-align: center;
+}
+
+span{
+   display: block;
+   text-align: center;
+}
+
+/****** ABOUT US ******/
+.about{
+   padding-top:60px;
+   padding-bottom:60px;
+   border:solid 2px red;
+}
+
+.about h1{
+   text-align: center;
+}
+
+.about .column li{
+   width: 992px;
+   margin-top: 10px;
+   margin:0 auto;
+   border:solid 2px green;
+}
+
+.about .column .left{
+   padding-top:10px;
+   width: 40%;
+   float: left;
+   background-color: #fefefe;
+}
+
+.about .column img{
+   width: 20%;
+   height: 160px;
+   float: left;
+   background-color: #dddefe;
+}
+
+.about .column .right{
+   padding-top:10px;
+   width: 40%;
+   float: right;
+   background-color: #fefefe;
+}
+
+/****** TEAM ******/
+.team{
+   border:solid 2px red;
+   margin-bottom: 100px;
+   padding-top: 30px;
+   padding-bottom: 60px;
+}
+
+.team h1{
+   text-align: center;
+}
+
+.team h2{
+   text-align: center;
+}
+
+.team .column{
+   width: 1000px;
+   margin:0 auto;
+}
+
+.team .column .list{
+   border:solid 2px green;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   width: 32.9%;
+   background-color: #fefefe;
+   float: left;
+}
+
+.team .column li .img{
+   width: 33.3%;
+   height: 120px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   background-color: #ddd;
+}
+
+.team .column li h3{
+    text-align: center;
+}
+
+.team .column li h4{
+   text-align: center;
+}
+
+.team .column li ol{
+   width: 80%;
+   height: 80px;
+   margin: 0 auto;
+}
+
+.team .column li ol li{
+   border:solid 2px green;
+   width: 30%;
+   float: left;
+   background-color: #fefefe;
+}
+
+.team .column li ol li img{
+   width: 100%;
+   height: 80px;
+   float: left;
+   background-color: #ddd;
+}
+ 
+.tip{
+   text-align: center;
+}
+
+/****** NAV BOTTOM ******/
+.nav_bottom{
+   width: 996px;
+   bottom:0px;
+   padding-bottom: 0px;
+   background-color:black;
+   position:fixed;
+   border:solid 2px red;
+   border-top: none;
+   border-bottom: none;
+}
+
+.nav_bottom li{
+   width: 10%;
+   float: left;
+   position: relative;
+   background-color:#000;
+}
+
+.nav_bottom .new{
+   width: 28px;
+   height: 14px;
+   right:-6px;
+   top:-4px;
+   line-height: 10px;
+   text-align: center;
+   color: #f0f0f0;
+   background-color: red;
+   position: absolute;
+   z-index: 1;
+}
+
+.nav_bottom a{
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   display: block;
+   color:#fff;
+   background-color:#000;
+}
+
+.nav_bottom a:hover{
+   background-color:#ddd;
+   color: #333;
+   border-top: solid 2px #f01;
+ }
+
+.nav_bottom li:active .new{
+   display: none;
+}
+
+/******  ******/

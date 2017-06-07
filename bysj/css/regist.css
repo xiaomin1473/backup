@@ -1,0 +1,26 @@
+.wrap{
+    width:300px;
+    height:30px;
+    margin:-15px auto;
+    padding-left:10px;
+}
+.wrap .check-btn{
+    width:0;
+    height:0;
+    opacity:0
+}
+.wrap label{
+    padding-left:28px;
+    width:300px;
+    height:25px;
+    line-height:25px;
+    background: url("../imges/wap_nochecked.png") no-repeat left center;
+    color:#fff;
+}
+.wrap input:checked+label{
+    background: url("../imges/wap_ischecked.png") no-repeat left center;
+}
+.wrap span{
+    padding-left:3px;
+    color:#f60;
+}

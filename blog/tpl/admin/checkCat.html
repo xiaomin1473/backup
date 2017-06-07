@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+    <script src="{JS_PATH}jquery.js"></script>
+    <script>
+        $(function(){
+            $(".del").click(function(){
+                var cid=$(this).parent().siblings().eq(0).html();
+                $.ajax({
+                    url:"index.php?m=admin&&c=check&&a=delCat",
+                    data:"cid="+cid,
+                    type:"post",
+                    success:function(e){
+                        if(e=="ok"){
+                            alert("删除成功");
+                            document.location.reload();
+                        }else if(e=="on"){
+                            alert('请先删除该分类的子分类');
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+    <style>
+        table tr th,table tr td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table class="table table-border table-striped table-hover table-condensed">
+    <tr>
+        <th>cid</th>
+        <th>cname</th>
+        <th>cimg</th>
+        <th>pid</th>
+        <th>操作</th>
+    </tr>
+    {foreach $data $v}
+    <tr>
+        <td>{$v["cid"]}</td>
+        <td>{$v["cname"]}</td>
+        <td>{$v["cimg"]}</td>
+        <td contenteditable="true">{$v["pid"]}</td>
+        <td><a href="index.php?m=admin&&c=check&&a=editCat&&cid={$v['cid']}" class="btn btn-success">修改</a><a href="" class="del btn btn-danger">删除</a></td>
+    </tr>
+    {/foreach}
+</table>
+</body>
+
+</html>

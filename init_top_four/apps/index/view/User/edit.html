@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理数据</title>
+
+    <link rel="stylesheet" type="text/css"  href="http://localhost/top_four/public/static/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+    <form class="form-horizontal" action="{:url('update')}" method="post">
+        <div class="form-group">
+            <div class="col-xs-3">
+                <center><label class="control-label">管理用户</label></center>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-3">
+                <input type="hidden" name="user_id" value="{$User->getData('user_id')}" />
+                <input type="text" class="form-control" name="user_account" value="{$User->getData('user_account')}" >
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-3">
+                <input type="text" class="form-control" name="user_pwd" value="{$User->getData('user_pwd')}">
+            </div>
+        </div>
+        <div class="form-group">
+           
+            <label class="col-sm-1 control-label">用户等级:</label>
+            <div class="col-sm-10">
+                <div class="col-xs-2">
+                    <select name="group_id" class="form-control">
+                        <option value="3">游客</option>
+                        <option value="2" {eq name="$User->getData('group_id')" value="2"}selected="selected"{/eq}>普通用户</option>
+                        <option value="1" {eq name="$User->getData('group_id')" value="1"}selected="selected"{/eq}>管理员</option>
+                        <option value="0" {eq name="$User->getData('group_id')" value="0"}selected="selected"{/eq}>ROOT</option>      
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+            <div class="col-sm-10">
+                <div class="col-xs-2">
+                    <select name="user_sex" class="form-control">
+                        <option value="man">男</option>
+                        <option value="lady" {eq name="$User->getData('user_sex')" value="lady"}selected="selected"{/eq}>女</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-3">
+                <input type="text" class="form-control" name="user_phone" value="{$User->getData('user_phone')}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-3">
+                <input type="text" class="form-control" name="user_birthday" value="{$User->getData('user_birthday')}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-3">
+                <textarea type="text" class="form-control" name="user_descript" rows="3">{$User->getData('user_descript')}</textarea>
+            </div>
+            <div class="col-xs-3">
+                <input type="hidden" name="create_time" value="{:time()}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class=" col-sm-10">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-primary">提交</button>
+                <button type="reset" class="col-sm-offset-1 btn btn-default">重置</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background:#000;
+        }
+        p{
+            width:100px;
+            height:100px;
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+    <!--<canvas id="canvas" width="120" height="120"></canvas>-->
+    <div id="d1">
+        <p id="p"></p>
+    </div>
+<script>
+    var p=document.getElementById("p");
+    var div=document.getElementById("d1");
+    p.addEventListener("click",function(){
+        p.style.background="red";
+        d1.style.background="green";
+
+    },false);
+    d1.addEventListener("click",function(){
+        p.style.background="green";
+        d1.style.background="red";
+
+    },false)
+    //false的话，事件在冒泡阶段执行，true的话，事件在捕获阶段执行
+    /*var myCanvas1=document.getElementById("canvas");
+    var canSize=myCanvas1.width;
+    function mycanvas(beginrota,closerota,text){
+        var ctx= myCanvas1.getContext("2d");
+        //画不完整的环
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(canSize/2,canSize/2,canSize/2-6,beginrota,closerota);
+        ctx.lineWidth = "6";
+        ctx.strokeStyle = "#54B7DE";
+        ctx.stroke();
+        ctx.closePath();
+        ctx.restore();
+        //画文字
+        ctx.save();
+        ctx.beginPath();
+        ctx.strokeStyle= "#54B7DE";
+        ctx.font=" 32px 宋体";
+        ctx.textAlign= "center";
+        ctx.strokeText(text,60,70);
+        ctx.strokeWidth= "2";
+        ctx.stroke();
+        ctx.closePath();
+        ctx.restore();
+    }
+    function fnCvas(){
+        var col = 0;
+        var mes = 5;
+        var timer = setInterval(function(){
+            col= col+ 0.1;
+            mes= mes+ 2;
+            if(col>Math.PI+Math.PI*0.24){
+                clearInterval(timer);
+            }
+            mycanvas(-Math.PI/2,col,mes+"%");
+        },50)
+    }
+    fnCvas();
+    */
+</script>
+</body>
+</html>

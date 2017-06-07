@@ -1,0 +1,26 @@
+{include file="tpl/index/header.html"}
+<article>
+    <form class="form-horizontal" action="index.php?a=addLink1" method="post">
+        <div class="control-group">
+            <label class="control-label" for="lname">友情链接名称</label>
+            <div class="controls">
+                <input type="text" id="lname" name="lname">
+            </div>
+        </div>
+        <br>
+        <div class="control-group">
+            <label class="control-label" for="lurl">友情链接地址</label>
+            <div class="controls">
+                <input type="text" name="lurl" id="lurl" required>
+            </div>
+        </div>
+            <br>
+            <div class="control-group">
+                <label class="control-label"></label>
+                <div class="controls">
+                    <button type="submit" class="btn btn-success">添加</button>
+                </div>
+        </div>
+    </form>
+</article>
+{include file="tpl/index/footer.html"}

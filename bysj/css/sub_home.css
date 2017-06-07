@@ -1,0 +1,38 @@
+.bg{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background: url("../imges/bannerV2.jpg") no-repeat;
+}
+.form-box{
+    width:600px;
+    height:400px;
+    position:absolute;
+    background:rgba(0,0,0,.4);
+    border-radius: 20px;
+}
+.layui-form-item{
+    margin-top:20px;
+}
+.layui-form-item .layui-form-label{
+    color:#00B0FA;
+}
+.layui-form-item .layui-input-block{
+    width:450px;
+}
+.submit{
+    display:block;
+    width:400px;
+    height:30px;
+    line-height:30px;
+    margin-top: 50px;
+    margin-left:100px;
+    background:#00B0FA ;
+    color:#fff;
+    text-align:center;
+    border-radius: 5px;
+    font-size:20px;
+    cursor: pointer;
+}

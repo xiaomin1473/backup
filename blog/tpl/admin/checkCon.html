@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+    <script src="{JS_PATH}jquery.js"></script>
+    <script>
+        $(function(){
+            $(".del").click(function(){
+                var sid=$(this).parent().siblings().eq(0).html();
+                $.ajax({
+                    url:"index.php?m=admin&&c=check&&a=delCon",
+                    data:"sid="+sid,
+                    type:"post",
+                    success:function(e){
+                        if(e=="ok"){
+                            alert("删除成功");
+                            document.location.reload();
+                        }
+                    }
+                })
+            })
+            $("tr>td").dblclick(function(){
+                var index=$(this).index();
+                var title=$("tr>th").eq(index).html();
+                var html=$(this).html();
+                if(index!=0&&index!=5){
+                    $(this).attr("contenteditable","true").blur(function(){
+                        if(html!=$(this).html()){
+                            html=$(this).html();
+                            var cid=$(this).siblings().eq(0).html();
+                            $.ajax({
+                                url:"index.php?m=admin&&c=check&&a=editCon&&cid="+cid,
+                                data:title+"="+html,
+                                type:"post",
+                                success:function(e){
+                                    console.log(e);
+                                    if(e=="ok"){
+                                        alert("数据已更新");
+                                        location.reload();
+                                    }
+                                }
+                            })
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+
+    <style>
+        table tr th,table tr td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table class="table table-border table-striped table-hover table-condensed">
+    <tr>
+        <th>sid</th>
+        <th>title</th>
+        <th>description</th>
+        <th>con</th>
+        <th>imgurl</th>
+        <th>stime</th>
+        <th>status</th>
+        <th>auser</th>
+        <th>url</th>
+        <th>cid</th>
+        <th>操作</th>
+    </tr>
+    {foreach $data $v}
+    <tr>
+        <td>{$v["sid"]}</td>
+        <td>{$v["title"]}</td>
+        <td>{$v["description"]}</td>
+        <td>{$v["con"]}</td>
+        <td><img src="{$v['imgurl']}" width="130px" alt=""></td>
+        <td>{$v["stime"]}</td>
+        <td>{$v["status"]}</td>
+        <td>{$v["auser"]}</td>
+        <td>{$v["url"]}</td>
+        <td>{$v["cid"]}</td>
+        <td><a href="" class="del btn btn-danger">删除</a></td>
+    </tr>
+    {/foreach}
+</table>
+</body>
+
+</html>

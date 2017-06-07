@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_PATH}main.css">
+    <script src="{JS_PATH}jquery.js"></script>
+    <script src="{JS_PATH}reg.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<form class="login-box" method="post" action="index.php?m=admin&&c=check&&a=checkReg">
+    <div class="user">
+        <span>用户名</span>
+        <input type="text" name="user" class="user">
+    </div>
+    <div class="error"></div>
+    <div class="user">
+        <span>密&nbsp;码</span>
+        <input type="password" name="pass" class="pass">
+    </div>
+    <div class="error"></div>
+    <div class="btns">
+        <input type="submit" name="login" class="login" value="注册" disabled="disabled">
+        <a href="index.php?m=admin&&a=login">登录</a>
+    </div>
+</form>
+</body>
+</html>
